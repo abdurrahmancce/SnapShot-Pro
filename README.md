@@ -1,67 +1,245 @@
-# Screenshot Tool
+# 📸 SnapShot Pro
 
-A small, efficient screenshot capture and management utility built in Python.
+A modern and professional **Screenshot Tool Desktop Application** built with **Python**, **Tkinter**, and **PyAutoGUI**.  
+SnapShot Pro allows users to capture full-screen screenshots, selected regions, and manage screenshot history through a clean and responsive graphical interface.
 
-## Overview
+---
 
-Screenshot Tool lets you capture, save, and organize screenshots quickly from your desktop. It provides a simple CLI/GUI entry point and stores captures in the `screenshots/` directory.
+# 🚀 Features
 
-## Features
+## 📷 Screenshot Capture
+- Full-screen screenshot capture
+- Select custom screen region
+- Window capture support
+- Delay timer before capture
+- Minimize app while capturing
 
-- **Quick Capture**: Capture full screen or selected regions.
-- **Organized Output**: Saves images to the `screenshots/` folder with timestamped filenames.
-- **Configurable**: Basic settings stored in `settings.json` for easy customization.
-- **Lightweight**: Minimal dependencies and fast startup.
+## 🖼 Live Preview
+- Real-time screenshot preview
+- Responsive preview panel
+- Auto-refresh on resize
 
-## Requirements
+## 📂 File Management
+- Automatically saves screenshots
+- Custom save location support
+- Timestamp-based unique filenames
+- Screenshot history panel
+- Open and delete screenshots directly
 
-- **Python**: 3.8+ recommended
-- See [requirements.txt](requirements.txt) for exact dependencies.
+## ⚡ Productivity Features
+- Keyboard shortcuts support
+- Clipboard copy support
+- Auto-open screenshot after capture
+- Screenshot counter
+- Status notifications
 
-## Installation
+## 🎨 Modern UI
+- Dark mode and light mode
+- Clean modern interface
+- Responsive layout
+- Custom styled buttons
 
-1. Clone or download the repository.
-2. Create a virtual environment and activate it:
+## ⚙ Settings System
+- Persistent settings using JSON
+- Stores theme preferences
+- Stores save location
+- Stores capture count
 
+---
+
+# 🛠 Technologies Used
+
+- Python
+- Tkinter
+- PyAutoGUI
+- Pillow (PIL)
+- Keyboard
+
+---
+
+# 📁 Project Structure
+
+```bash
+Screenshot-Tool/
+│
+├── main.py
+├── settings.json
+├── requirements.txt
+├── screenshots/
+└── README.md
 ```
-python -m venv .venv
-source .venv/Scripts/activate  # Windows: .venv\Scripts\activate
+
+---
+
+# 📦 Installation
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/screenshot-tool.git
+cd screenshot-tool
 ```
 
-3. Install dependencies:
+---
 
-```
+## 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+---
 
-- Run the main program:
+# ▶ Run the Application
 
-```
+```bash
 python main.py
 ```
 
-- The main entry point is [main.py](main.py). Captured screenshots are written to the [screenshots/](screenshots/) folder.
+---
 
-## Configuration
+# ⌨ Keyboard Shortcuts
 
-- Edit [settings.json](settings.json) to customize default behavior (output folder, image format, hotkeys).
+| Shortcut | Action |
+|---|---|
+| `Ctrl + Shift + S` | Full Screen Capture |
+| `Ctrl + Shift + R` | Region Capture |
 
-## Development
+---
 
-- Run the app locally and modify `main.py` for feature changes.
-- If you add dependencies, update `requirements.txt` accordingly.
+# ⚙ Configuration
 
-## Contributing
+The application uses a `settings.json` file to store user preferences.
 
-- **Bug reports**: Open an issue describing the problem and environment.
-- **Pull requests**: Fork the repo, create a feature branch, and submit a PR with a clear description.
+Example:
 
-## License
+```json
+{
+    "theme": "dark",
+    "save_location": "screenshots",
+    "delay": 0,
+    "auto_open": true,
+    "sound_enabled": true,
+    "screenshot_count": 0,
+    "minimize_on_capture": true
+}
+```
 
-This project is distributed under the MIT License. Replace this section if a different license applies.
+---
 
-## Contact
+# 📚 Required Libraries
 
-For questions or feedback, open an issue or contact the maintainer.
+```txt
+pyautogui
+pillow
+keyboard
+```
+
+---
+
+# 🧠 Core Functionalities
+
+## Screenshot Engine
+Handles:
+- Fullscreen capture
+- Region capture
+- File saving
+- Clipboard copy
+
+## Settings Manager
+Handles:
+- Load/save settings
+- Theme persistence
+- Save location storage
+
+## Region Selector
+Provides:
+- Transparent overlay
+- Drag-to-select functionality
+
+## Styled UI Components
+Includes:
+- Custom buttons
+- Hover effects
+- Theme-based styling
+
+---
+
+# 📸 Screenshots
+
+## Main Dashboard
+- Live preview section
+- Screenshot history
+- Capture controls
+
+## Dark & Light Mode
+- Easy theme switching
+- Professional appearance
+
+---
+
+# 🔥 Future Improvements
+
+- Screen recording support
+- Cloud upload integration
+- OCR text extraction
+- Annotation tools
+- Multi-monitor support
+- Built-in image editor
+
+---
+
+# 🐞 Troubleshooting
+
+## PyAutoGUI Error
+
+Install required libraries:
+
+```bash
+pip install pyautogui
+```
+
+---
+
+## Keyboard Shortcut Not Working
+
+Run the application as administrator on Windows.
+
+---
+
+# 👨‍💻 Author
+
+Developed by **Abdur Rahman**
+
+Computer & Communication Engineering Student  
+Passionate about Technology, UI Design, and Software Development.
+
+---
+
+# 📄 License
+
+This project is open-source and free to use for learning and educational purposes.
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+- Give it a ⭐ on GitHub
+- Share with your friends
+- Improve and customize it further
+
+---
+
+# 🎯 Final Output
+
+A fully functional professional Screenshot Tool application with:
+- Modern GUI
+- Fast screenshot capture
+- Live preview
+- Screenshot management
+- Keyboard shortcuts
+- Theme support
+- Persistent settings
+- Beginner-friendly clean code
